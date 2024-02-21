@@ -12,17 +12,14 @@ body {
 }
 
 header {
-    background: none;
+    background-color: #EAD2B5;
     display: flex;
+    align-items: center;
 }
 
 .first_section {
-    background-image: url(images/background_accueil.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-
-    background-color: black;
-    filter: brightness(75%);
 
     height: 800px;
 
@@ -36,11 +33,7 @@ header {
 
     width: 100%;
 
-
-
 }
-
-
 
 .boutton_annonces {
     margin-top: 30px;
@@ -56,8 +49,6 @@ header {
     align-items: center;
 
     font-size: 25px;
-
-
 }
 
 .boutton_poser_annonce {
@@ -76,12 +67,7 @@ header {
     font-size: 25px;
 }
 
-a {
-    text-decoration: none;
-    color: #252525;
-}
-
-.profil {
+.profil{
     width: 92px;
     height: 92px;
 
