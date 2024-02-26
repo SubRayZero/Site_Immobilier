@@ -21,9 +21,6 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
 
-    background-color: black;
-    filter: brightness(75%);
-
     height: 800px;
 
 
@@ -40,7 +37,43 @@ header {
 
 }
 
+.recherche {
+    width: 100%;
+    height: 100%;
 
+    display: flex;
+    justify-content: center;
+    margin-top: 250px;
+}
+
+.recherche_bar {
+    width: 880px;
+    height: 81px;
+
+    background-color: #D9D9D9;
+}
+
+.recherche_bar_white {
+    width: 773px;
+    height: 88px;
+
+    background-color: #FAFAFA;
+
+    margin-top: 10px;
+    margin-left: 10px;
+
+    display: flex;
+    flex-direction: wrap;
+
+}
+
+.recherche_bar_white_container {
+    width: 260px;
+    height: 100%;
+
+    border: solid 2px #252525;
+
+}
 
 .boutton_annonces {
     margin-top: 30px;
@@ -87,4 +120,22 @@ a {
 
     margin-right: 50px;
     margin-top: 15px;
+}
+
+.container_annonces {
+    height: 800px;
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.card_annonces {
+    background-color: lightblue;
+    height: 400px;
+    width: 400px;
+
+    margin: 20px;
 }

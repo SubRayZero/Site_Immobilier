@@ -1,70 +1,56 @@
-class BienImmobilier {
-    id;
-    Titre;
-    typeDeBien;
-    Description;
-    Prix;
-    Adresse;
-    Surface;
-    NomPiece;
+import { BienImmobilier } from "./BienImmobilier.js";
 
-    constructor(id, Titre, Description, Prix, Adresse, Surface, NomPiece, typeDeBien) {
-        this.id = id;
-        this.Titre = Titre;
-        this.typeDeBien = typeDeBien;
-        this.Description = Description;
-        this.Prix = Prix;
-        this.Adresse = Adresse;
-        this.Surface = Surface;
-        this.NomPiece = NomPiece;
+const init = function () {
+
+    var maison = document.querySelector(".maison");
+    var immeuble = document.querySelector(".immeuble");
+    var terrain = document.querySelector(".terrain");
+    var titre = document.querySelector(".titre");
+    var adresse = document.querySelector(".adresse");
+    var surface = document.querySelector(".surface");
+    var nombre_pieces = document.querySelector(".nombre_pieces");
+    var description = document.querySelector(".description");
+    var prix = document.querySelector(".prix");
+    var bouton = document.querySelector(".bouton");
+
+
+    //Bouton valider
+    bouton.addEventListener("click", () => {
+        var titreValue = document.querySelector(".titre_input").value;
+        var adresseValue = document.querySelector(".adresse_input").value;
+        var surfaceValue = document.querySelector(".surface_input").value;
+        var nombrePiecesValue = document.querySelector(".nombre_pieces_input").value;
+        var descriptionValue = document.querySelector(".description_input").value;
+        var prixValue = document.querySelector(".prix_input").value;
+        var typeBienValue = document.querySelector(".selector").value;
+
+        if (titreValue !== "") {
+
+            const bien = new BienImmobilier(crypto.randomUUID(), titreValue, descriptionValue, prixValue, adresseValue, surfaceValue, typeBienValue);
+
+            putInLocalStorage(bien);
+
+        }
+
+    });
+
+    console.log(putInLocalStorage);
+
+
+    //Pour mettre dans le localStorage
+    function putInLocalStorage(bien) {
+        const tableEnregistrement = JSON.parse(localStorage.getItem("tableEnregistrement") || "[]");
+
+        tableEnregistrement.push(bien);
+
+        localStorage.setItem("tableEnregistrement", JSON.stringify(tableEnregistrement));
+
     }
+
 
 }
 
 
-class Appartement extends BienImmobilier {
-    Etage;
-    Ascenseur;
+window.onload = init;
 
-    constructor(id, Titre, Description, Prix, Adresse, Surface, NomPiece, Etage, Ascenseur) {
-        super(id, Titre, Description, Prix, Adresse, Surface, NomPiece, "Appartement");
-
-
-        this.Etage = Etage;
-        this.Ascenseur = Ascenseur;
-
-
-
-    }
-}
-
-class Maison {
-    Jardin;
-    Garage;
-
-    constructor(id, Titre, Description, Prix, Adresse, Surface, NomPiece, Jardin, Garage) {
-        super(id, Titre, Description, Prix, Adresse, Surface, NomPiece);
-
-
-        this.Jardin = Jardin;
-        this.Garage = Garage;
-
-
-    }
-}
-
-class Terrain {
-    Isolé;
-    Lotissement;
-
-    constructor(id, Titre, Description, Prix, Adresse, Surface, NomPiece, Isolé, Lotissement) {
-        super(id, Titre, Description, Prix, Adresse, Surface, NomPiece);
-
-
-        this.Isolé = Isolé;
-        this.Lotissement = Lotissement;
-
-
-    }
-}
 
