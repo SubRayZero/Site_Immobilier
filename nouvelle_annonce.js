@@ -19,8 +19,6 @@ class BienImmobilier {
         this.NomPiece = NomPiece;
     }
 
-
-
 }
 
 
