@@ -22,13 +22,13 @@ class BienImmobilier {
 
     //méthode statique -> permet de travailler sur une instance et non une classe
     //... prend objet et l'étale dans le surobjet (spread objet)
-    //prend toute les valeurs de l'autre instant
+    //prend toute les valeurs de l'autre instance
 
     static recreateBien(bien) {
         return new BienImmobilier(bien.id, bien.Titre, bien.Description, bien.Prix, bien.Adresse, bien.Surface, bien.NomPiece, bien.typeDeBien);
     }
 
-    //méthode qui permet de créer élément HTML depuis BienImmobilier
+    //méthode qui permet de créer un élément HTML depuis BienImmobilier
     bienHTML() {
         const cardAnnonce = document.createElement("div");
         cardAnnonce.classList.add("card_annonces");
@@ -36,6 +36,7 @@ class BienImmobilier {
         cardAnnonce.id = this.id;
 
         cardAnnonce.insertAdjacentHTML("beforeend", `<div class="titre_annonce">${this.Titre}</div>`);
+        cardAnnonce.insertAdjacentHTML("beforeend", `<div class="prix_annonce">${this.Prix}</div>`);
         cardAnnonce.insertAdjacentHTML("beforeend", `<div class="description_annonces">${this.Description}</div>`);
         cardAnnonce.insertAdjacentHTML("beforeend", `<div class="location_annonces">${this.Adresse}</div>`);
 
@@ -43,6 +44,10 @@ class BienImmobilier {
 
     }
 
+
+    
+
 }
 
+//export du BienImmobilier
 export { BienImmobilier };

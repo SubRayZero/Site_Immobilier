@@ -1,3 +1,5 @@
+
+//import du BienImmobilier
 import { BienImmobilier } from "./BienImmobilier.js";
 
 const init = function () { //Jeu charge à la page

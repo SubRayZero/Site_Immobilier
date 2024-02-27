@@ -1,8 +1,10 @@
+//import du BienImmobilier
 import { BienImmobilier } from "./BienImmobilier.js";
 
+//Pas obligé de mettre cette fonction
 const init = function () {
 
-    var maison = document.querySelector(".maison");
+    /*var maison = document.querySelector(".maison");
     var immeuble = document.querySelector(".immeuble");
     var terrain = document.querySelector(".terrain");
     var titre = document.querySelector(".titre");
@@ -10,10 +12,9 @@ const init = function () {
     var surface = document.querySelector(".surface");
     var nombre_pieces = document.querySelector(".nombre_pieces");
     var description = document.querySelector(".description");
-    var prix = document.querySelector(".prix");
+    var prix = document.querySelector(".prix");*/
+
     var bouton = document.querySelector(".bouton");
-
-
     //Bouton valider
     bouton.addEventListener("click", () => {
         var titreValue = document.querySelector(".titre_input").value;
@@ -26,6 +27,7 @@ const init = function () {
 
         if (titreValue !== "") {
 
+            //crypto.randomUUID attribue un ID unique et de façon aléatoire
             const bien = new BienImmobilier(crypto.randomUUID(), titreValue, descriptionValue, prixValue, adresseValue, surfaceValue, typeBienValue);
 
             putInLocalStorage(bien);

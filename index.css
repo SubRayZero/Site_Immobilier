@@ -23,78 +23,28 @@ header {
 
     height: 800px;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
 .header_navigation {
     display: flex;
     gap: 20px;
-    justify-content: flex-end;
+    justify-content: center;
 
     width: 100%;
 
-
-
-}
-
-.recherche {
-    width: 100%;
-    height: 100%;
-
     display: flex;
-    justify-content: center;
-    margin-top: 250px;
-}
-
-.recherche_bar {
-    width: 880px;
-    height: 81px;
-
-    background-color: #D9D9D9;
-}
-
-.recherche_bar_white {
-    width: 773px;
-    height: 88px;
-
-    background-color: #FAFAFA;
-
-    margin-top: 10px;
-    margin-left: 10px;
-
-    display: flex;
-    flex-direction: wrap;
+    flex-wrap: wrap;
 
 }
 
-.recherche_bar_white_container {
-    width: 260px;
-    height: 100%;
-
-    border: solid 2px #252525;
-
-}
-
-.boutton_annonces {
-    margin-top: 30px;
-    width: 324px;
-    height: 64px;
-
-    background-color: #FAFAFA;
-    opacity: 80%;
-    text-align: center;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    font-size: 25px;
-
-
-}
 
 .boutton_poser_annonce {
     margin-top: 30px;
+
     width: 324px;
     height: 64px;
 
@@ -114,14 +64,6 @@ a {
     color: #252525;
 }
 
-.profil {
-    width: 92px;
-    height: 92px;
-
-    margin-right: 50px;
-    margin-top: 15px;
-}
-
 .container_annonces {
     height: 800px;
     width: 100%;
@@ -130,12 +72,63 @@ a {
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
+
+    background-color: #FAFAFA;
 }
 
 .card_annonces {
-    background-color: lightblue;
+    background-color: #e5e5e5;
     height: 400px;
     width: 400px;
 
     margin: 20px;
+    border-radius: 30px;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    justify-content: center;
+    gap: 10px;
+
+}
+
+
+.titre_annonce {
+    margin-left: 30px;
+    font-size: 35px;
+
+}
+
+.prix_annonce {
+    margin-left: 30px;
+    font-size: 20px;
+}
+
+.description_annonces {
+    margin-left: 30px;
+
+
+}
+
+.location_annonces {
+    margin-left: 30px;
+
+}
+
+@media screen and (max-width: 1016px) {
+    .first_section {
+        background-image: url(images/background_accueil.jpg);
+        background-size: auto;
+        background-repeat: no-repeat;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .boutton_poser_annonce {
+        margin-top: 30px;
+
+        width: 250px;
+        height: 64px;
+    }
 }
