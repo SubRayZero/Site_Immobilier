@@ -1,42 +1,64 @@
 body {
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
-    font-weight: weight;
     font-style: normal;
     font-variation-settings: "width" 100;
+    font-weight: lighter;
+
 
     margin: 0;
     padding: 0;
 
     height: 100%;
-}
 
-a {
-    text-decoration: none;
-    color: #252525;
-}
 
+
+    background-color: #FAFAFA;
+}
 
 .first_section {
     background-image: url(images/background_accueil.jpg);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
     background-size: cover;
     background-repeat: no-repeat;
 
-    height: 100px;
+    display: flex;
+    flex-direction: row;
 
+    width: 100%;
+    height: 700px;
 
 }
 
-.boutton_accueil {
-    width: 324px;
-    height: 64px;
+.first_section_image {
+    height: 500px;
+    width: 100%;
+}
 
+.first_section_formulaire {
     background-color: #FAFAFA;
-    opacity: 80%;
+
+    width: 613px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    color: #252525;
+}
+
+.texte_presentation {
+    margin-left: 40px;
+    font-size: 40px;
+    text-transform: uppercase;
+
+}
+
+.boutton_poser_annonce {
+    width: 300px;
+    height: 60px;
     text-align: center;
 
     display: flex;
@@ -44,17 +66,20 @@ a {
     align-items: center;
 
     font-size: 25px;
+
+    border: solid 1.5px;
+    border-radius: 30px;
 }
 
-.container_main {
-    height: 600px;
-    width: 100%;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+.boutton_poser_annonce:hover {
+    background-color: rgb(238, 238, 238);
 }
+
+a {
+    text-decoration: none;
+    color: #252525;
+}
+
 
 .container_formulaire {
     height: 500px;
@@ -66,15 +91,41 @@ a {
 }
 
 input {
-    margin-left: 20px;
     border-radius: 30px;
     height: 30px;
+
+    transition: all 0.2s ease-in-out;
+    width: 250px;
+    height: 30px;
+
+    margin: 10px;
+
 }
 
-.bouton {
-    border-radius: 30px;
-    width: 100px;
+.bouton{
+    width: 300px;
+    height: 60px;
+    text-align: center;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 25px;
+    font-weight: lighter;
+    text-decoration: none;
+    text-transform: none;
+    
+    border: solid 1.5px;
+    border-radius: 30px;
+
+    background-color: #FAFAFA;
+
+    cursor: pointer;
+}
+
+.bouton:hover {
+background-color: rgb(238, 238, 238);
 }
 
 .selector {

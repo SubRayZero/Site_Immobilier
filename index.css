@@ -1,62 +1,79 @@
 body {
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
-    font-weight: weight;
     font-style: normal;
     font-variation-settings: "width" 100;
+    font-weight: lighter;
+
 
     margin: 0;
     padding: 0;
 
     height: 100%;
-}
 
-header {
-    background: none;
-    display: flex;
+
+
+    background-color: #FAFAFA;
 }
 
 .first_section {
+
     background-image: url(images/background_accueil.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 
-    height: 800px;
-
     display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.header_navigation {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
+    flex-direction: row;
 
     width: 100%;
-
-    display: flex;
-    flex-wrap: wrap;
+    height: 600px;
 
 }
 
+.first_section_image {
+
+    height: 500px;
+    width: 100%;
+}
+
+.first_section_texte {
+    background-color: #FAFAFA;
+
+    width: 613px;
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    color: #252525;
+}
+
+.texte_presentation {
+    margin-left: 40px;
+    font-size: 40px;
+    text-transform: uppercase;
+
+}
 
 .boutton_poser_annonce {
-    margin-top: 30px;
-
     width: 324px;
     height: 64px;
-
-    background-color: #FAFAFA;
-    opacity: 80%;
     text-align: center;
+    margin-left: 40px;
 
     display: flex;
     justify-content: center;
     align-items: center;
 
     font-size: 25px;
+
+    border: solid 1.5px;
+    border-radius: 30px;
+}
+
+.boutton_poser_annonce:hover {
+    background-color: rgb(238, 238, 238);
 }
 
 a {
@@ -73,11 +90,10 @@ a {
     justify-content: center;
     gap: 10px;
 
-    background-color: #FAFAFA;
 }
 
 .card_annonces {
-    background-color: #e5e5e5;
+    background-color: #FAFAFA;
     height: 400px;
     width: 400px;
 
@@ -91,6 +107,8 @@ a {
     justify-content: center;
     gap: 10px;
 
+    border: solid 1.5px;
+
 }
 
 
@@ -98,15 +116,20 @@ a {
     margin-left: 30px;
     font-size: 35px;
 
+
+    text-transform: uppercase;
+
 }
 
 .prix_annonce {
     margin-left: 30px;
     font-size: 20px;
+
 }
 
 .description_annonces {
     margin-left: 30px;
+
 
 
 }

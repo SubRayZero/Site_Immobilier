@@ -17,20 +17,8 @@
 
 <body>
     <section class="first_section">
-
-        <header>
-            <div class="header_navigation">
-                <a href="index.html">
-                    <div class="boutton_accueil">Accueil
-                    </div>
-                </a>
-            </div>
-    </section>
-    </header>
-
-    <main class="container_main">
-        <section class="container_formulaire">
-            <label for="type_bien">Quel type de bien:</label>
+        <div class="first_section_formulaire">
+            <label for="type_bien" class="type_bien">Quel type de bien:</label>
 
             <select name="choix_type" class="selector">
                 <option value="maison">Maison</option>
@@ -38,28 +26,31 @@
                 <option value="terrain">Terrain</option>
             </select>
 
-            <label class="titre">Titre
-                <input class="titre_input">
+            <label class="titre">
+                <input class="titre_input" placeholder="Titre">
             </label>
-            <label class="adresse">Adresse
-                <input class="adresse_input">
+            <label class="adresse">
+                <input class="adresse_input" placeholder="Adresse">
             </label>
-            <label class="surface">Surface
-                <input class="surface_input">
+            <label class="surface">
+                <input class="surface_input" placeholder="Surface">
             </label>
-            <label class="nombre_pieces">Nombre pièces
-                <input class="nombre_pieces_input">
+            <label class="nombre_pieces">
+                <input class="nombre_pieces_input" placeholder="Nombre de pièces">
             </label>
-            <label class="description">Description
-                <input class="description_input">
+            <label class="description">
+                <input class="description_input" placeholder="Description">
             </label>
-            <label class="prix">Prix du bien
-                <input class="prix_input">
+            <label class="prix">
+                <input class="prix_input" placeholder="Prix du bien">
             </label>
+            <button class="bouton">Valider</button>
+            <a href="index.html">
+                <div class="boutton_poser_annonce">Accueil</div>
+            </a>
+        </div>
+    </section>
 
-            <button class="bouton">Enregistrer</button>
-        </section>
-    </main>
 
 </body>
 

@@ -35,6 +35,7 @@ class BienImmobilier {
 
         cardAnnonce.id = this.id;
 
+        //On dit au JS qu'on va faire du HTML
         cardAnnonce.insertAdjacentHTML("beforeend", `<div class="titre_annonce">${this.Titre}</div>`);
         cardAnnonce.insertAdjacentHTML("beforeend", `<div class="prix_annonce">${this.Prix}</div>`);
         cardAnnonce.insertAdjacentHTML("beforeend", `<div class="description_annonces">${this.Description}</div>`);
