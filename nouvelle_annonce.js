@@ -15,7 +15,7 @@ const init = function () {
     var prix = document.querySelector(".prix");*/
 
     var bouton = document.querySelector(".bouton");
-    //Bouton valider
+    
     bouton.addEventListener("click", () => {
         var titreValue = document.querySelector(".titre_input").value;
         var adresseValue = document.querySelector(".adresse_input").value;

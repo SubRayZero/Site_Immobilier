@@ -21,7 +21,6 @@ class BienImmobilier {
     }
 
     //méthode statique -> permet de travailler sur une instance et non une classe
-    //... prend objet et l'étale dans le surobjet (spread objet)
     //prend toute les valeurs de l'autre instance
 
     static recreateBien(bien) {

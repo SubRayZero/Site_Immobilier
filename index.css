@@ -44,7 +44,7 @@ body {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 5px;
 
     color: #252525;
 }
@@ -73,6 +73,86 @@ body {
 }
 
 .boutton_poser_annonce:hover {
+    background-color: rgb(238, 238, 238);
+}
+
+.bouton_immeuble{
+    width: 324px;
+    height: 64px;
+    text-align: center;
+    margin-left: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 25px;
+
+    border: solid 1.5px;
+    border-radius: 30px;
+}
+
+.bouton_immeuble:hover {
+    background-color: rgb(238, 238, 238);
+}
+
+.bouton_maison{
+    width: 324px;
+    height: 64px;
+    text-align: center;
+    margin-left: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 25px;
+
+    border: solid 1.5px;
+    border-radius: 30px;
+}
+
+.bouton_maison:hover {
+    background-color: rgb(238, 238, 238);
+}
+
+.bouton_terrain{
+    width: 324px;
+    height: 64px;
+    text-align: center;
+    margin-left: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 25px;
+
+    border: solid 1.5px;
+    border-radius: 30px;
+}
+
+.bouton_terrain:hover {
+    background-color: rgb(238, 238, 238);
+}
+
+.bouton_toutes_annonces{
+    width: 324px;
+    height: 64px;
+    text-align: center;
+    margin-left: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 25px;
+
+    border: solid 1.5px;
+    border-radius: 30px;
+}
+
+.bouton_toutes_annonces:hover {
     background-color: rgb(238, 238, 238);
 }
 
